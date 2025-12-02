@@ -1,31 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
-import ScrollMagic from 'scrollmagic'
+// import ScrollMagic from 'scrollmagic'
 import './App.css'
-import BgCanvas from './comp/BgCanvas'
+import {BgCanvas} from '../comp/BgCanvas'
+// import { useScroll } from '@reactuses/core';
 
-function App() {
-  const [count, setCount] = useState(0)
+
+function MorePage() {
   const mainPage = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-
-    const mainPageScrollController = new ScrollMagic.Controller()
-    const scene = new ScrollMagic.Scene({
-      triggerElement:mainPage.current
-    })
-    .addTo(mainPageScrollController)
-
-    return ()=>{
-      scene.destroy()
-      mainPageScrollController.destroy(true)
-    }
-
-  }, [])
-
+  
   return (
     <>
-      <BgCanvas></BgCanvas>
+      <BgCanvas ></BgCanvas>
       <div ref={mainPage} className='min-h-screen flex justify-center w-full  '>
-
+        {/* {isScrolling&&<p>hello</p>} */}
         <main className='bg-slate-100 w-3/4 pb-30 my-40 m-0 p-0'>
           <section>
             <p className='py-20 px-20 text-center text-lg leading-10'>
@@ -56,4 +43,4 @@ function App() {
   )
 }
 
-export default App
+export default MorePage

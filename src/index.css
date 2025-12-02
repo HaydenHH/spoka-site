@@ -1,1 +1,16 @@
 @import "tailwindcss";
+.pri-text{
+    color:#B8A170;
+}
+
+.pri-bg{
+    background-color: #35312E;
+}
+
+.pri-bg-lite{
+    background-color: #3F3B39;
+}
+
+.side-info{
+    @apply flex justify-between w-[420px];    
+}

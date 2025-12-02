@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@reactuses/core": "^6.1.6",
     "@tailwindcss/vite": "^4.1.17",
     "p5": "^2.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.6",
     "scrollmagic": "^2.0.8"
   },
   "devDependencies": {
