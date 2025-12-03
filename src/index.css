@@ -12,5 +12,5 @@
 }
 
 .side-info{
-    @apply flex justify-between w-[420px];    
+    @apply flex justify-between  w-[430px];    
 }
