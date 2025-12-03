@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import  { useRef, useEffect, useState } from 'react'
 import p5 from 'p5'
 export interface BgCanvasProps {
     isScroll: boolean
@@ -43,7 +43,6 @@ export function BgCanvas() {
 
 
 
-            const oriWidth = 1
             const lineSpace = 2
             let stripeWidth = 1;
             let targetWidth = 1;

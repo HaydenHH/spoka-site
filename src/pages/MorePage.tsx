@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import {  useRef, } from 'react'
 // import ScrollMagic from 'scrollmagic'
 import './App.css'
 import {BgCanvas} from '../comp/BgCanvas'
